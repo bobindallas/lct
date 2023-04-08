@@ -1,0 +1,33 @@
+models:
+
+  Recipe:
+    name: string:254
+    description: text
+    cooking_instructions: text
+    notes: text
+
+  Ingredient:
+    name: string:254
+    notes: text
+
+  Tag:
+    tag: string:254
+
+  RecipeIngredient:
+    recipe_id: bigInteger
+    ingredient_id: bigInteger
+
+  RecipeTag:
+    recipe_id: bigInteger
+    tag_id: bigInteger
+
+controllers:
+
+  Recipe:
+    resource
+
+  Ingredient:
+    resource
+
+  Tag:
+    resource

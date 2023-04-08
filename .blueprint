@@ -1,0 +1,49 @@
+created:
+    - app/Http/Controllers/RecipeController.php
+    - app/Http/Controllers/IngredientController.php
+    - app/Http/Controllers/TagController.php
+    - database/factories/RecipeFactory.php
+    - database/factories/IngredientFactory.php
+    - database/factories/TagFactory.php
+    - database/factories/RecipeIngredientFactory.php
+    - database/factories/RecipeTagFactory.php
+    - database/migrations/2023_04_07_144129_create_recipes_table.php
+    - database/migrations/2023_04_07_144130_create_ingredients_table.php
+    - database/migrations/2023_04_07_144131_create_tags_table.php
+    - database/migrations/2023_04_07_144132_create_recipe_ingredients_table.php
+    - database/migrations/2023_04_07_144133_create_recipe_tags_table.php
+    - app/Models/Recipe.php
+    - app/Models/Ingredient.php
+    - app/Models/Tag.php
+    - app/Models/RecipeIngredient.php
+    - app/Models/RecipeTag.php
+    - tests/Feature/Http/Controllers/RecipeControllerTest.php
+    - tests/Feature/Http/Controllers/IngredientControllerTest.php
+    - tests/Feature/Http/Controllers/TagControllerTest.php
+    - app/Http/Requests/RecipeStoreRequest.php
+    - app/Http/Requests/RecipeUpdateRequest.php
+    - app/Http/Requests/IngredientStoreRequest.php
+    - app/Http/Requests/IngredientUpdateRequest.php
+    - app/Http/Requests/TagStoreRequest.php
+    - app/Http/Requests/TagUpdateRequest.php
+    - resources/views/recipe/index.blade.php
+    - resources/views/recipe/create.blade.php
+    - resources/views/recipe/show.blade.php
+    - resources/views/recipe/edit.blade.php
+    - resources/views/ingredient/index.blade.php
+    - resources/views/ingredient/create.blade.php
+    - resources/views/ingredient/show.blade.php
+    - resources/views/ingredient/edit.blade.php
+    - resources/views/tag/index.blade.php
+    - resources/views/tag/create.blade.php
+    - resources/views/tag/show.blade.php
+    - resources/views/tag/edit.blade.php
+updated:
+    - routes/web.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }
+    Recipe: { name: 'string:254', description: text, cooking_instructions: text, notes: text }
+    Ingredient: { name: 'string:254', notes: text }
+    Tag: { tag: 'string:254' }
+    RecipeIngredient: { RecipeId: bigInteger, IngredientId: bigInteger }
+    RecipeTag: { RecipeId: bigInteger, TagId: bigInteger }
