@@ -1,6 +1,6 @@
 # LCT - Lasek Code Test
 
-This is a rudimentary recipe database app with tags and ingredients for searching (bot implemented here)
+This is a rudimentary recipe database app with tags and ingredients for searching (not implemented here)
 
 We're using:
 
