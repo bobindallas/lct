@@ -17,7 +17,7 @@ class RecipeController extends Controller
 {
 	public function index(Request $request): View
 	{
-		$recipes = Recipe::all();
+		$recipes = Recipe::paginate(10);
 
 		return view('recipe.index', compact('recipes'));
 	}
@@ -123,7 +123,7 @@ class RecipeController extends Controller
 	}
 
 	/**
-	 * clear recipe ingredients - called from multiple functions
+	 * clear recipe ingredients
 	 **/
 	private function clear_recipe_ingredients(Recipe $recipe) {
 	
@@ -132,7 +132,7 @@ class RecipeController extends Controller
 	}
 
 	/**
-	 * clear recipe tags - called from multiple functions
+	 * clear recipe tags
 	 **/
 	private function clear_recipe_tags(Recipe $recipe) {
 	
@@ -140,7 +140,7 @@ class RecipeController extends Controller
 	}
 
 	/**
-	 * load recipe ingredients - called from multiple functions
+	 * load recipe ingredients
 	 **/
 	private function load_recipe_ingredients(Recipe $recipe, array $ingredients) {
 	
@@ -155,7 +155,7 @@ class RecipeController extends Controller
 	}
 
 	/**
-	 * load recipe ingredients - called from multiple functions
+	 * load recipe ingredients
 	 **/
 	private function load_recipe_tags(Recipe $recipe, array $tags) {
 	

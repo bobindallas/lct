@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            <a class="underline hover:text-blue-700" href="{{ route('ingredient.index') }}" title="Back to Ingredient index">{{ __('Ingredients') }}</a> >> Edit
+            <a class="underline hover:text-blue-700" href="{{ route('ingredient.index') }}" title="Back to Ingredient index">{{ __('Ingredients') }}</a> &raquo; Edit &raquo; {{ $ingredient->name }}
         </h2>
     </x-slot>
 
