@@ -7,6 +7,9 @@ We're using:
 * Laravel 10.6
 * PHP 8.2
 * Laravel Blueprint => https://github.com/laravel-shift/blueprint
+* Laravel Breeze => https://github.com/laravel/breeze
+* Tailwind => https://tailwindcss.com/
+* Alpine.js => https://alpinejs.dev/
 
 #### Install Instructions:
 
