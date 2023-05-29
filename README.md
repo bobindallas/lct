@@ -1,6 +1,7 @@
-# LCT - Lasek Code Test
+# LCT - Laravel Code Test
 
-This is a rudimentary recipe database app with tags and ingredients for searching (not implemented here)
+This is a rudimentary recipe database app with tags and ingredients for searching (not implemented here).
+This was done as a coding test for a job that I did not get.
 
 We're using:
 
