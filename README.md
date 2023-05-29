@@ -1,7 +1,7 @@
 # LCT - Laravel Code Test
 
 This is a rudimentary recipe database app with tags and ingredients for searching (not implemented here).
-This was done as a coding test for a job that I did not get.
+This was a coding test as part of a job interview.
 
 We're using:
 
